@@ -1,5 +1,8 @@
 public class Main{
 
+    interface Add {
+        int sumBetween(int x, int y);
+    }
     public static void main(String[] args) {
         
 
@@ -13,7 +16,15 @@ public class Main{
         };
 
         // Run Command and Catch Exceptions
-       System.out.print(add(1,3));
+        try{
+            System.out.println(add.sumBetween(Integer.valueOf(args[0]), Integer.valueOf(args[1])));
+        } catch(Exception e){
+            System.out.println("Ran error: " + e);
+        }
+
+
+
+
 
         
     }
