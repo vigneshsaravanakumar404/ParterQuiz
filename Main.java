@@ -1,5 +1,8 @@
 public class Main{
 
+    interface Add {
+        int sumBetween(int x, int y);
+    }
     public static void main(String[] args) {
         
 
@@ -18,6 +21,10 @@ public class Main{
         } catch(Exception e){
             System.out.println("Ran error: " + e);
         }
+
+
+
+
 
         
     }
