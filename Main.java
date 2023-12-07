@@ -13,11 +13,7 @@ public class Main{
         };
 
         // Run Command and Catch Exceptions
-        try{
-            System.out.println(add.sumBetween(Integer.valueOf(args[0]), Integer.valueOf(args[1])));
-        } catch(Exception e){
-            System.out.println("Ran error: " + e);
-        }
+       System.out.print(add(1,3));
 
         
     }
